@@ -49,5 +49,10 @@ namespace Dave.IdentityProvider
                 new IdentityResources.Profile()
             };
         }
+
+        public static IEnumerable<Client> GetClients()
+        {
+            return new List<Client>();
+        }
     }
 }
