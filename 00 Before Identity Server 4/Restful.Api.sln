@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restful.Core", "Restful.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restful.Infrastructure", "Restful.Infrastructure\Restful.Infrastructure.csproj", "{DC1EE3EA-0E3F-4C17-B11D-5502833F5BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restful.Tests", "Restful.Tests\Restful.Tests.csproj", "{DC0A8175-80DD-4C27-A1E7-8F1DF18EF02C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{DC1EE3EA-0E3F-4C17-B11D-5502833F5BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC1EE3EA-0E3F-4C17-B11D-5502833F5BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC1EE3EA-0E3F-4C17-B11D-5502833F5BEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC0A8175-80DD-4C27-A1E7-8F1DF18EF02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC0A8175-80DD-4C27-A1E7-8F1DF18EF02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC0A8175-80DD-4C27-A1E7-8F1DF18EF02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC0A8175-80DD-4C27-A1E7-8F1DF18EF02C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
