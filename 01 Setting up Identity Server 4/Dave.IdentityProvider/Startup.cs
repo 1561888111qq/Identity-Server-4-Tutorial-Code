@@ -30,7 +30,6 @@ namespace Dave.IdentityProvider
             }
 
             app.UseIdentityServer();
-
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restful.Core", "Restful.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restful.Infrastructure", "Restful.Infrastructure\Restful.Infrastructure.csproj", "{DC1EE3EA-0E3F-4C17-B11D-5502833F5BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dave.IdentityProvider", "Dave.IdentityProvider\Dave.IdentityProvider.csproj", "{28F2A386-9EFA-46DB-BA71-099AA9574031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dave.IdentityProvider", "Dave.IdentityProvider\Dave.IdentityProvider.csproj", "{28F2A386-9EFA-46DB-BA71-099AA9574031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcClient", "MvcClient\MvcClient.csproj", "{1379A69F-BE31-43B8-8D37-A327E83393D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{28F2A386-9EFA-46DB-BA71-099AA9574031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28F2A386-9EFA-46DB-BA71-099AA9574031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28F2A386-9EFA-46DB-BA71-099AA9574031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1379A69F-BE31-43B8-8D37-A327E83393D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1379A69F-BE31-43B8-8D37-A327E83393D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1379A69F-BE31-43B8-8D37-A327E83393D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1379A69F-BE31-43B8-8D37-A327E83393D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

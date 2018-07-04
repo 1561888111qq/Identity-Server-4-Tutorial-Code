@@ -1,4 +1,5 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityServer4;
+using IdentityServer4.Models;
 using IdentityServer4.Test;
 using System;
 using System.Collections.Generic;
@@ -52,7 +53,27 @@ namespace Dave.IdentityProvider
 
         public static IEnumerable<Client> GetClients()
         {
-            return new List<Client>();
+            return new List<Client>
+            {
+                new Client
+                {
+                    ClientId = "mvcclient",
+                    ClientName = "MVC 客户端",
+                    AllowedGrantTypes = GrantTypes.Hybrid,
+
+                    // 登陆后跳转到这
+                    RedirectUris = { "https://localhost:5002/signin-oidc" },
+
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId
+                    },
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    }
+                }
+            };
         }
     }
 }
