@@ -62,11 +62,18 @@ namespace Dave.IdentityProvider
                     AllowedGrantTypes = GrantTypes.Hybrid,
 
                     // 登陆后跳转到这
-                    RedirectUris = { "https://localhost:5002/signin-oidc" },
-
+                    RedirectUris =
+                    {
+                        "https://localhost:5002/signin-oidc"
+                    },
+                    PostLogoutRedirectUris =
+                    {
+                        "https://localhost:5002/signout-callback-oidc"
+                    },
                     AllowedScopes = new List<string>
                     {
-                        IdentityServerConstants.StandardScopes.OpenId
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
                     },
                     ClientSecrets =
                     {

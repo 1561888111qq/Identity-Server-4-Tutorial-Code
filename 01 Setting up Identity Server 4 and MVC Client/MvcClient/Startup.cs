@@ -50,9 +50,10 @@ namespace MvcClient
                 options.ResponseType = "code id_token";
                 options.Scope.Clear();
                 options.Scope.Add("openid");
-                // options.Scope.Add("profile");
+                options.Scope.Add("profile");
                 options.SaveTokens = true;
                 options.ClientSecret = "secret";
+                options.GetClaimsFromUserInfoEndpoint = true;
             });
         }
 
