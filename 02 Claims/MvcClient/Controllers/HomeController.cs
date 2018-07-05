@@ -19,6 +19,7 @@ namespace MvcClient.Controllers
             return View();
         }
 
+        [Authorize(Roles = "管理员")]
         public async Task<IActionResult> About()
         {
             var idToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.IdToken);

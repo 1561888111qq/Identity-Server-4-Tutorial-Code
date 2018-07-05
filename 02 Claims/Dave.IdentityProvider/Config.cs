@@ -25,7 +25,8 @@ namespace Dave.IdentityProvider
                     {
                         new Claim("given_name", "Nick"),
                         new Claim("family_name", "Carter"),
-                        new Claim("email", "12345@qq.com")
+                        new Claim("email", "12345@qq.com"),
+                        new Claim("role", "管理员")
                     }
                 },
                 new TestUser
@@ -38,7 +39,8 @@ namespace Dave.IdentityProvider
                     {
                         new Claim("given_name", "Dave"),
                         new Claim("family_name", "Mustaine"),
-                        new Claim("email", "67890@qq.com")
+                        new Claim("email", "67890@qq.com"),
+                        new Claim("role", "注册用户")
                     }
                 }
             };
@@ -50,7 +52,8 @@ namespace Dave.IdentityProvider
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
-                new IdentityResources.Email()
+                new IdentityResources.Email(),
+                new IdentityResource("roles", "角色", new List<string>{ "role" })
             };
         }
 
@@ -77,7 +80,8 @@ namespace Dave.IdentityProvider
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Email
+                        IdentityServerConstants.StandardScopes.Email,
+                        "roles"
                     },
                     ClientSecrets =
                     {
